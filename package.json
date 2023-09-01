@@ -1,0 +1,33 @@
+{
+  "name": "minio-es",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@8.7.1",
+  "description": "Use the MinIO JavaScript Client SDK in the browser easily, with support for ES modules.",
+  "license": "MIT",
+  "repository": "hojas/minio-es",
+  "keywords": [
+    "minio"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/minio-core.js",
+      "require": "./dist/minio-core.umd.cjs"
+    }
+  },
+  "main": "./dist/minio-core.umd.cjs",
+  "module": "./dist/minio-core.js",
+  "types": "./dist/main.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "node ./scripts/dev.js",
+    "build": "node ./scripts/build.js"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.0",
+    "@types/node": "^20.5.7",
+    "eslint": "^8.48.0",
+    "shelljs": "^0.8.5"
+  }
+}

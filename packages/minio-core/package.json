@@ -1,0 +1,29 @@
+{
+  "name": "minio-core",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/minio-core.js",
+      "require": "./dist/minio-core.umd.cjs"
+    }
+  },
+  "main": "./dist/minio-core.umd.cjs",
+  "module": "./dist/minio-core.js",
+  "types": "./dist/main.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "minio": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.3",
+    "vite-plugin-node-stdlib-browser": "^0.2.1"
+  }
+}
