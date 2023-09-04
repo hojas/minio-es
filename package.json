@@ -1,7 +1,7 @@
 {
   "name": "minio-es",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.7.1",
   "description": "Use the MinIO JavaScript Client SDK in the browser easily, with support for ES modules.",
   "license": "MIT",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.41.0",
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.5.9",
     "eslint": "^8.48.0",
     "shelljs": "^0.8.5"
   }
